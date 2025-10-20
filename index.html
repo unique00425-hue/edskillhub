@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EdSkill Hub – Youth Empowerment Platform</title>
+  <meta name="description" content="Empowering youth through education, technology, and leadership.">
+  <meta name="author" content="EdSkill Hub Team">
 
+  <!-- Favicon -->
+  <link rel="icon" href="https://uniqueAOSes.github.io/edskillhub/assets/images/logo.png" type="image/png">
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS Animation CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Styles (GitHub Pages CDN) -->
+  <link rel="stylesheet" href="https://uniqueAOSes.github.io/edskillhub/assets/css/style.css">
+</head>
+<body>
+
+  <!-- 1. Hero Section -->
+  <section id="hero" class="text-center py-5 bg-light">
+    <h1>Welcome to EdSkill Hub 🌱</h1>
+    <p class="lead">Empowering youth through education, technology, and leadership.</p>
+    <button class="btn btn-primary" onclick="exploreCourses()">Explore Courses</button>
+  </section>
+
+  <!-- 2. About Section -->
+  <section id="about" class="section py-5">
+    <div class="container">
+      <h2>About EdSkill Hub</h2>
+      <p>EdSkill Hub is a youth empowerment platform designed to help learners grow through accessible digital skills, leadership development, and community support. Our mission is to make learning paths clear, engaging, and future-ready.</p>
+    </div>
+  </section>
+
+  <!-- 3. Learning Paths -->
+  <section id="learn" class="section py-5 bg-light">
+    <div class="container">
+      <h2>Learning Paths</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h4>💻 Web Development</h4>
+          <p>Build websites, apps, and digital tools from scratch.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>🎨 Graphic Design</h4>
+          <p>Create stunning visuals and brand identities.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>📈 Digital Marketing</h4>
+          <p>Grow audiences and master online strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Course Catalog -->
+  <section id="catalog" class="section py-5">
+    <div class="container">
+      <h2>Course Catalog</h2>
+      <p>Browse our curated list of beginner-friendly courses. Filter by category, skill level, or interest.</p>
+    </div>
+  </section>
+
+  <!-- 5. Blog Preview -->
+  <section id="blog" class="section py-5 bg-light">
+    <div class="container">
+      <h2>From the Blog</h2>
+      <ul>
+        <li><strong>How to Lead with Empathy</strong> – Coming soon</li>
+        <li><strong>Top 5 Skills for Digital Youth</strong> – Coming soon</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Login Preview -->
+  <section id="loginPreview" class="section py-5">
+    <div class="container">
+      <h2>Dashboard Preview</h2>
+      <p>Track your progress, save favorite courses, and connect with mentors. Full dashboard coming soon!</p>
+      <button class="btn btn-outline-secondary">Preview Dashboard</button>
+    </div>
+  </section>
+
+  <!-- 7. Newsletter Signup -->
+  <section id="newsletter" class="section py-5 bg-light">
+    <div class="container">
+      <h2>Stay in the Loop</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-success">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 8. Contact Form -->
+  <section id="contact" class="section py-5">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 9. Footer + Chatbot Modal -->
+  <footer class="bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4">
+          <h5>EdSkill Hub</h5>
+          <p>45 Innovation Way, London, UK NW1 2DB</p>
+          <p>
+            Phone: <a href="tel:+442079460123" class="text-white">+44 20 7946 0123</a><br>
+            Email: <a href="mailto:hello@edskillhub.org" class="text-white">hello@edskillhub.org</a><br>
+            WhatsApp: <a href="https://wa.me/442079460123" class="text-white">Chat on WhatsApp</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#learn" class="text-white">Learning Paths</a></li>
+            <li><a href="#catalog" class="text-white">Courses</a></li>
+            <li><a href="#contact" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Subscribe & Chat</h6>
+          <form action="https://formspree.io/f/yourFormID" method="POST">
+            <input type="email" name="email" placeholder="Your email">
+            <button type="submit" class="btn btn-success btn-sm">Join</button>
+          </form>
+          <button class="btn btn-outline-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#chatbotModal">💬 Chat with EdSkillBot</button>
+        </div>
+      </div>
+      <hr class="bg-white">
+      <div class="text-center pb-3">
+        <small>&copy; 2025 EdSkill Hub. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Modal -->
+  <div class="modal fade" id="chatbotModal" tabindex="-1" aria-labelledby="chatbotModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chatbotModalLabel">EdSkillBot</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>👋 Hi! I'm EdSkillBot. I can help you explore courses, join events, and grow your skills.</p>
+          <ul>
+            <li>📚 Explore Courses</li>
+            <li>📅 Upcoming Events</li>
+            <li>🧠 Leadership Tips</li>
+            <li>💬 Contact a Mentor</li>
+          </ul>
+          <p><em>(Chatbot functionality coming soon)</em></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+
+  <!-- jQuery (CDN) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Bootstrap JS Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Custom Script (GitHub Pages CDN) -->
+  <script src="https://uniqueAOSes.github.io/edskillhub/assets/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+    
